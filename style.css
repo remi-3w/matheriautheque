@@ -1,0 +1,98 @@
+/* Styles pour le corps */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Styles pour l'en-tête */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #009d76;
+    color: #fff;
+}
+
+.logo img {
+    height: 50px; /* Taille du logo */
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px; /* Espace entre les liens */
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /* Souligner les liens au survol */
+}
+
+/* Styles pour le conteneur principal */
+.container {
+    /*background-color: #009d76;*/
+    display: flex;
+    flex-direction: row; /* Utiliser Flexbox pour créer deux colonnes */
+    flex-basis: auto;
+    max-width: 1200px;
+    margin: 20px auto; /* Centrer le conteneur */
+}
+
+/* Styles pour les colonnes */
+.column {
+    flex: 0 0 48%; /* Largeur de chaque colonne (48% pour laisser un espace de 4% entre elles) */
+}
+
+/* Styles pour les cartes */
+.card {
+    width:560px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px; /* Bordures arrondies */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre pour l'effet de profondeur */
+    margin: 20px;
+}
+
+/* En-tête de la carte */
+.card-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+/* Cellules de l'en-tête */
+.header-cell {
+    padding: 10px;
+}
+
+.header-cell.left {
+    flex: 0 0 10%; /* La cellule de gauche occupe 10% de la largeur */
+    background-color: rgb(198, 199, 199);
+}
+
+.header-cell.center {
+    flex:content; /* La cellule centrale occupe 80% de la largeur */
+    text-align: center;
+ 
+}
+
+.header-cell.right {
+    flex: 0 0 10%; /* La cellule de droite occupe 10% de la largeur */
+     
+    text-align: right;
+    background-color:brown;
+}
+
+/* Contenu de la carte */
+.card-content {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
